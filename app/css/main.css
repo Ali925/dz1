@@ -1,0 +1,523 @@
+.image-wrap{  
+  width: 140px;
+   height: 140px;  
+   border-radius: 50% 50%;
+   overflow: hidden;
+   border: 5px solid #30a5bd;
+  margin-top: 15px;
+}
+
+.where{
+  font-size: 17px;
+  font-family: "fira_sansbook";
+  color: rgb(74, 84, 93);
+}
+
+.when{
+  font-size: 15px;
+  font-family: "fira_sanslight";
+  color: rgb(74, 84, 93);
+}
+
+.skills{
+    display: inline-block;
+    margin-top: -23px;
+    margin-left: 129px;
+
+}
+
+.skill{
+    display: inline-block;
+    margin-left: 2px;
+    margin-bottom: 4px;
+}
+
+.skill{
+  border-radius: 2px;
+  background: linear-gradient(0deg,#2e8ca2 0,#2e8ca2 47%,#3ba8c0 48%,#3ba8c0 100%); 
+  padding: 0 14px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  font-family: ProximaNovaCond;
+    text-align: center;
+}
+
+.avatar{
+  margin: -30px -4px;
+
+}
+
+.lock{
+    position: absolute;
+    margin-left: 152px;
+    margin-top: 23px;
+}
+
+.copyright{
+    position: absolute;
+  margin-left: 400px;
+margin-top: 23px;
+  font-size: 13px;
+  font-family: "fira_sanslight";
+  color: rgb(74, 84, 93);
+
+}
+
+.foot-container{
+      position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 93px;
+ } 
+
+.footer{
+  min-width: 960px;
+  height: 80px;
+  background: url(/image/gr-line.png) top center no-repeat #eff3f7;
+}
+
+.edu-2{
+    background: url(/image/doc.png) left center no-repeat;
+    margin-bottom: 1em;
+  padding-left: 60px;
+  margin-left: 9px;
+  margin-top: 23px;
+}
+
+.edu-1{
+  background: url(/image/hat.png) left center no-repeat;
+   margin-bottom: 1em;
+  padding-left: 70px;
+  
+}
+
+.worklist, .edulist{
+    margin: 0;
+    padding: 0;
+}
+
+.work{
+  margin-bottom: 1em;
+  padding-left: 70px;
+  background: url(/image/bag.png) left center no-repeat;
+}
+
+
+.aboutme-item{
+      display: list-item;
+      margin-bottom: 7px;
+}
+
+.aboutme-1, .aboutme-2 {
+  display: block;
+  color: rgb(74, 84, 93);
+}
+
+.aboutme-2{
+    font-family: "fira_sansbook";
+    font-size: 15px;   
+}
+
+.aboutme-1 {
+    float:left;
+    font-size: 17px;
+    margin-right: 18px;
+    font-family: "fira_sansmedium";
+}
+
+.content-box-body{
+    padding: 0 58px 7px;
+}
+
+.box-body-m{
+    padding: 0 58px 38px;
+}
+
+.content-box-head{
+      display: inline-block;
+    margin: 0 0 21px;
+  padding: 14px 23px;
+    line-height: 38px;
+    border-bottom: 2px solid #3ba8c0;
+  font-size: 27px;
+  font-family: "fira_sansbook";
+  font-weight: 400;
+  color: #3ba8c0;
+}
+
+.aboutme-list{
+    float: right;
+  width: 365px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: -3px;
+}
+
+.image-wrap{
+    float: left;
+}
+
+.content-box{
+    margin-bottom: 26px;
+  background: rgb(239,243,247);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.main-content{
+    float: right;
+    width: 650px;
+}
+
+.navigation-links{
+    float: left;
+    width: 250px;
+    margin-top: -20px;
+    margin-left: 1px;
+}
+
+.adrs-links{
+    margin-top: 0px;
+    margin-left: -40px;
+}
+
+.adrs-link-1, .adrs-link-2, .adrs-link-3{
+    font-family: "fira_sansbook";
+  font-style: normal;
+   color:white;
+   font-size: 17px;
+   text-decoration: none;
+    position: absolute;
+    
+}
+
+.adrs-link-1:hover, .adrs-link-2:hover, .adrs-link-3:hover{
+    text-decoration: underline;
+}
+
+.address-head-text{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 19px;
+    color: white;
+    font-size: 21px;
+  font-family: "fira_sansbook";
+  font-style: normal;
+}
+
+.adrs-img{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 42px;
+}
+
+.adrs-link-1{
+margin-top: 9px;
+padding-left: 83px;
+}
+
+.adrs-link-2, .adrs-link-3{
+    margin-top: 9px;
+    padding-left: 83px;
+}
+
+.adrs-item-3{
+    background-color: rgb(81,218,248);
+    border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;    
+}
+
+.adrs-item-2{
+    background-color: rgb(72,203,232);
+}
+
+.adrs-item-1{
+
+    background-color: rgb(65,185,212);
+}
+
+.address-head, .adrs-item{
+    height: 40px;
+    width: 250px;
+}
+
+.address-links{
+    height: 160px;
+    width: 250px;
+    border-radius: 4px;
+    background-color: rgb(59,168,192);
+}
+
+.main-nav{
+   background-color: rgb(239,243,247);
+    height: 218px;
+    width: 250px;
+    border-radius: 4px;
+    margin-bottom: 23px;
+}
+
+.nav-item-active{
+    background-color: rgb(59,168,192);
+    height: 72px;
+    width: 250px;
+    margin-left: -40px;
+    margin-bottom: 20px;
+    border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+}
+
+.nav-link-active{
+    position: absolute;
+    padding-left: 28px;
+    margin-top: 22px;
+    color: white;
+    font-size: 23px;
+  font-family: "fira_sansbook";
+  text-decoration: none;
+}
+
+.nav-item{
+padding: 20px;
+}
+
+.nav-link{
+    position: absolute;
+    font-size: 21px;
+  font-family: "fira_sansbook";
+  color:rgb(167,172,184);
+  text-decoration: none;
+    margin-left: -33px; 
+    margin-top: -20px;
+}
+
+.nav-link:hover{
+    color: rgb(143,203,218);
+}
+
+.nav-link-2{
+    margin-top: 13px;
+}
+
+.nav-item-line{
+    position: absolute;
+    background-color: rgb(59,168,192);
+    height: 2px;
+    width: 230px;
+    margin-left: -30px;
+    margin-top: 11px;
+}
+
+.wrapper ,html ,body{
+    height:100%;
+}
+
+.wrapper{
+    display: table;
+    width: 100%;
+    margin:0 auto;
+}
+
+.main-container{
+      width: 960px;
+  margin: 0 auto;
+}
+
+.page-head{
+    position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  position: relative;
+  min-width: 960px;
+  height: 119px;
+  margin-bottom: 39px;
+  background: url(/image/gr-line.png) bottom center no-repeat #eff3f7;
+}
+
+.social-link-vk:hover{
+    width: 48px;
+    height: 48px;
+    background-position: -395px -165px;
+}
+
+.social-link-fb:hover{
+    width: 48px;
+    height: 48px;
+    background-position: -175px -5px;
+}
+
+.social-link-tw:hover{
+     width: 48px;
+    height: 48px;
+    background-position: -281px -165px;
+}
+
+.social-link-git:hover{
+    width: 48px;
+    height: 48px;
+    background-position: -5px -62px;
+}
+
+.social-item{
+    display:inline-block;
+    padding-right:19.6px;
+  width: 48px;
+  height: 48px;
+}
+
+.social-icons{
+    position: absolute;
+  top:16px;
+  right: -26px;
+}
+
+.logo{
+    position: absolute;
+  top: 38px;
+  left: 0;
+}
+
+body{
+    background-image: url("/image/comppattern2.png");
+}
+
+.socials, .nav-links, .adrs-links, .aboutme-list, .skills, .worklist, .edulist{
+    list-style: none;
+}
+.sprite {
+    background-image: url(/image/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bag {
+    width: 36px;
+    height: 34px;
+    background-position: -5px -5px;
+}
+
+.sprite-doc {
+    width: 26px;
+    height: 32px;
+    background-position: -51px -5px;
+}
+
+.sprite-email {
+    width: 21px;
+    height: 16px;
+    background-position: -87px -5px;
+}
+
+.sprite-fb {
+    width: 48px;
+    height: 48px;
+    background-position: -118px -5px;
+}
+
+.sprite-fb-hv {
+    width: 47px;
+    height: 47px;
+    background-position: -175px -5px;
+}
+
+.sprite-git {
+    width: 48px;
+    height: 48px;
+    background-position: -232px -5px;
+}
+
+.sprite-git-hv {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -62px;
+}
+
+.sprite-hat {
+    width: 41px;
+    height: 23px;
+    background-position: -62px -62px;
+}
+
+.sprite-lock {
+    width: 20px;
+    height: 32px;
+    background-position: -289px -5px;
+}
+
+.sprite-logo-girl {
+    width: 150px;
+    height: 150px;
+    background-position: -5px -147px;
+}
+
+.sprite-logo-man {
+    width: 150px;
+    height: 150px;
+    background-position: -319px -5px;
+}
+
+.sprite-phone {
+    width: 19px;
+    height: 20px;
+    background-position: -165px -165px;
+}
+
+.sprite-skype {
+    width: 20px;
+    height: 20px;
+    background-position: -194px -165px;
+}
+
+.sprite-tw {
+    width: 48px;
+    height: 48px;
+    background-position: -224px -165px;
+}
+
+.sprite-tw-hv {
+    width: 47px;
+    height: 47px;
+    background-position: -281px -165px;
+}
+
+.sprite-vk {
+    width: 48px;
+    height: 48px;
+    background-position: -338px -165px;
+}
+
+.sprite-vk-hv {
+    width: 47px;
+    height: 47px;
+    background-position: -395px -165px;
+}
+
+.wrapper{
+    position:relative;
+    min-height:100%;
+    height:auto!important;
+    overflow:hidden;
+}
+.wrapper:after {
+    content: "";
+    height: 80px;
+    display: block;
+}
+.footer{
+    height: 80px;
+    margin-top: -80px;  
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}

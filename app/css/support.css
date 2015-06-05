@@ -1,0 +1,471 @@
+.support-box{
+  margin-top: 68px;
+  margin-left: 122px;
+}
+
+.name-input, .email-input{
+     width: 188px;
+     height: 38px;
+     margin-top: 2px;
+     margin-left: 2px;
+     border-radius: 3px;
+     border-width: 1px;
+  border-color: rgb(72, 203, 232);
+  border-style: solid;
+  margin-bottom: 30px;  
+}
+
+.email-input{
+  margin-left: 13px;
+}
+
+.name-label, .email-label{
+  position: absolute;
+  margin-top: -26px;
+  font-family: 'fira_sanslight';
+  font-size: 19px;
+  color: rgb(149, 154, 168);
+}
+
+
+.email-label{
+  margin-left: 12px;
+}
+
+.msg-label{
+  position: absolute;
+  margin-top: 56px;
+  margin-left: -408px;
+  font-family: 'fira_sanslight';
+  font-size: 19px;
+  color: rgb(149, 154, 168);
+}
+
+.msg-text{
+  width: 396px;
+  height: 177px;
+  border-radius: 3px;
+     border-width: 1px;
+     margin-top: 10px;
+     margin-left: 2px;
+  border-color: rgb(72, 203, 232);
+  border-style: solid;
+}
+
+.content-box-head-bottom{
+  width: 649px;
+  height: 17px;
+  background: rgb(103,223,250);
+  margin-top: 121px;
+}
+
+.content-box-head{
+  position: absolute;
+  font-family: 'fira_sansbook';
+  font-size: 27px;
+  font-weight: 100;
+  color:white;
+  margin-top: 41px;
+  margin-left: 59px;
+}
+
+.content-box-header{
+  height:138px;
+  width: 649px;
+  background: rgb(72,203,232);
+  overflow: hidden;
+}
+
+.content-box{
+    margin-bottom: 26px;
+  background: rgb(239,243,247);
+  border-radius: 4px;
+  overflow: hidden;
+  padding-bottom: 243px;
+  overflow: hidden;
+}
+
+.main-content{
+    float: right;
+    width: 649px;
+}
+
+.navigation-links{
+    float: left;
+    width: 250px;
+}
+
+.adrs-links{
+    margin-top: 0px;
+    margin-left: -40px;
+}
+
+.adrs-link-1, .adrs-link-2, .adrs-link-3{
+    font-family: "fira_sansbook";
+  font-style: normal;
+   color:white;
+   font-size: 17px;
+   text-decoration: none;
+    position: absolute;
+    
+}
+
+.adrs-link-1:hover, .adrs-link-2:hover, .adrs-link-3:hover{
+    text-decoration: underline;
+}
+
+.address-head-text{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 19px;
+    color: white;
+    font-size: 21px;
+  font-family: "fira_sansbook";
+  font-style: normal;
+}
+
+.adrs-img{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 42px;
+}
+
+.adrs-link-1{
+margin-top: 9px;
+padding-left: 83px;
+}
+
+.adrs-link-2, .adrs-link-3{
+    margin-top: 9px;
+    padding-left: 83px;
+}
+
+.adrs-item-3{
+    background-color: rgb(81,218,248);
+    border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;    
+}
+
+.adrs-item-2{
+    background-color: rgb(72,203,232);
+}
+
+.adrs-item-1{
+
+    background-color: rgb(65,185,212);
+}
+
+.address-head, .adrs-item{
+    height: 40px;
+    width: 250px;
+}
+
+.address-links{
+    height: 160px;
+    width: 250px;
+    border-radius: 4px;
+    background-color: rgb(59,168,192);
+}
+
+.main-nav{
+   background-color: rgb(239,243,247);
+    height: 218px;
+    width: 250px;
+    border-radius: 4px;
+    margin-bottom: 23px;
+    margin-top: -20px;
+}
+
+.main-nav-head{
+    background-color: rgb(59,168,192);
+    height: 73px;
+    width: 250px;
+    margin-top: 64px;
+    margin-left: -40px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.nav-active{
+    position: absolute;
+    color: white;
+    margin-top: 20px;
+    margin-left: 27px;
+    font-size: 21px;
+  font-family: "fira_sansbook";
+  text-decoration: none;
+}
+
+.nav-item-line{
+    position: absolute;
+    background-color: rgb(59,168,192);
+    height: 2px;
+    width: 230px;
+    margin-left: -28px;
+    margin-top: 33px;
+}
+
+.nav-item{
+padding: 20px;
+}
+
+.nav-link{
+    position: absolute;
+    font-size: 21px;
+  font-family: "fira_sansbook";
+  color:rgb(167,172,184);
+  text-decoration: none;
+    margin-left: -33px; 
+    margin-top: 3px;
+}
+
+.nav-link:hover{
+    color: rgb(143,203,218);
+}
+
+.nav-link-2{
+    margin-top: 37px;
+}
+
+
+.foot-container{
+      position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 93px;
+ } 
+
+.footer{
+  min-width: 960px;
+  height: 80px;
+  background: url(/image/gr-line.png) top center no-repeat #eff3f7;
+}
+
+.lock{
+    position: absolute;
+    margin-left: 152px;
+    margin-top: 23px;
+}
+
+.copyright{
+    position: absolute;
+  margin-left: 400px;
+margin-top: 23px;
+  font-size: 13px;
+  font-family: "fira_sanslight";
+  color: rgb(74, 84, 93);
+
+}   
+
+.wrapper ,html ,body{
+    height:100%;
+}
+
+.wrapper{
+    display: table;
+    width: 100%;
+    margin:0 auto;
+}
+
+.main-container{
+      width: 960px;
+  margin: 0 auto;
+}
+
+.page-head{
+    position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  position: relative;
+  min-width: 960px;
+  height: 119px;
+  margin-bottom: 39px;
+  background: url(/image/gr-line.png) bottom center no-repeat #eff3f7;
+}
+
+.social-link-vk:hover{
+    width: 48px;
+    height: 48px;
+    background-position: -395px -165px;
+}
+
+.social-link-fb:hover{
+    width: 48px;
+    height: 48px;
+    background-position: -175px -5px;
+}
+
+.social-link-tw:hover{
+     width: 48px;
+    height: 48px;
+    background-position: -281px -165px;
+}
+
+.social-link-git:hover{
+    width: 48px;
+    height: 48px;
+    background-position: -5px -62px;
+}
+
+.social-item{
+    display:inline-block;
+    padding-right:19.6px;
+  width: 48px;
+  height: 48px;
+}
+
+.social-icons{
+    position: absolute;
+  top:16px;
+  right: -26px;
+}
+
+.logo{
+    position: absolute;
+  top: 38px;
+  left: 0;
+}
+
+body{
+    background-image: url("/image/comppattern2.png");
+}
+
+.socials, .nav-links, .adrs-links, .aboutme-list, .skills, .workslist, .edulist{
+    list-style: none;
+}
+.sprite {
+    background-image: url(/image/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bag {
+    width: 36px;
+    height: 34px;
+    background-position: -5px -5px;
+}
+
+.sprite-doc {
+    width: 26px;
+    height: 32px;
+    background-position: -51px -5px;
+}
+
+.sprite-email {
+    width: 21px;
+    height: 16px;
+    background-position: -87px -5px;
+}
+
+.sprite-fb {
+    width: 48px;
+    height: 48px;
+    background-position: -118px -5px;
+}
+
+.sprite-fb-hv {
+    width: 47px;
+    height: 47px;
+    background-position: -175px -5px;
+}
+
+.sprite-git {
+    width: 48px;
+    height: 48px;
+    background-position: -232px -5px;
+}
+
+.sprite-git-hv {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -62px;
+}
+
+.sprite-hat {
+    width: 41px;
+    height: 23px;
+    background-position: -62px -62px;
+}
+
+.sprite-lock {
+    width: 20px;
+    height: 32px;
+    background-position: -289px -5px;
+}
+
+.sprite-logo-girl {
+    width: 150px;
+    height: 150px;
+    background-position: -5px -147px;
+}
+
+.sprite-logo-man {
+    width: 150px;
+    height: 150px;
+    background-position: -319px -5px;
+}
+
+.sprite-phone {
+    width: 19px;
+    height: 20px;
+    background-position: -165px -165px;
+}
+
+.sprite-skype {
+    width: 20px;
+    height: 20px;
+    background-position: -194px -165px;
+}
+
+.sprite-tw {
+    width: 48px;
+    height: 48px;
+    background-position: -224px -165px;
+}
+
+.sprite-tw-hv {
+    width: 47px;
+    height: 47px;
+    background-position: -281px -165px;
+}
+
+.sprite-vk {
+    width: 48px;
+    height: 48px;
+    background-position: -338px -165px;
+}
+
+.sprite-vk-hv {
+    width: 47px;
+    height: 47px;
+    background-position: -395px -165px;
+}
+
+.wrapper{
+    position:relative;
+    min-height:100%;
+    height:auto!important;
+    overflow:hidden;
+}
+.wrapper:after {
+    content: "";
+    height: 80px;
+    display: block;
+}
+.footer{
+    height: 80px;
+    margin-top: -80px;  
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
