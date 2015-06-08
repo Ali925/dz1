@@ -1,0 +1,154 @@
+.auth-box{
+    margin-top: 74px;
+    margin-left: 83px;
+    width: 430px;
+}
+
+.submit-btn{
+    margin-top: 34px;
+    margin-left: 99px;
+    border-radius: 8px;
+    border: none;
+  background-color: rgb(72, 203, 232);
+  width: 226px;
+  height: 51px;
+  font-family: 'fira_sansbook'; 
+  font-size: 36px;
+  color: rgb(246, 246, 246);
+  box-shadow: 0px 4px 0px rgb(59,168,192);
+  -webkit-box-shadow: 0px 4px 0px rgb(59,168,192);
+  -moz-box-shadow: 0px 4px 0px rgb(59,168,192);
+  text-align: center;
+  line-height:50px;
+}
+
+.login-label, .psw-label{
+    font-family: "fira_sanslight";
+    font-size: 36px;
+    color: rgb(149, 154, 168);
+    position: absolute;
+    margin-left: 161px;
+}
+
+.login-label{
+    margin-top: -59px;
+}
+
+.psw-label{
+    margin-top: 11px;
+    margin-left: 150px; 
+}
+
+.login-input, .psw-input{
+  width: 422px;
+  height: 58px;
+  border-width: 1px;
+  border-color: rgb(72, 203, 232);
+  border-style: solid;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+}
+
+.psw-input{
+    margin-top: 69px;
+}
+
+body{
+    background-image: url("/image/comppattern2.png");
+}
+
+.header{
+    height: 107px;
+    width: 591px;
+    background: rgb(72,203,232);
+    overflow: hidden;
+}
+
+.head-foot{
+    height: 15px;
+    width: 591px;
+    background: rgb(103,223,250);
+    margin-top: 14px;
+}
+
+.head-text{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 16px;  
+    font-family: 'fira_sansbook';
+    color: rgb(255, 255, 255);
+}
+
+.content-box{
+    height: 484px;
+    width: 591px;
+    margin-top: 227px;
+    margin-bottom: 183px;
+    margin-left: auto;
+    margin-right: auto;
+  background: rgb(239,243,247);
+  border-radius: 4px;
+  overflow: hidden;
+  -webkit-box-shadow:0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.114);
+  -moz-box-shadow:0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.114);
+  box-shadow:0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.114);
+}
+
+.foot-container{
+      position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 93px;
+ } 
+
+.footer{
+  min-width: 960px;
+  height: 80px;
+  background: url(/image/gr-line.png) top center no-repeat #eff3f7;
+}
+
+.copyright{
+    position: absolute;
+  margin-left: 405px;
+margin-top: 30px;
+  font-size: 13px;
+  font-family: "fira_sanslight";
+  color: rgb(74, 84, 93);
+
+}   
+
+.wrapper ,html ,body{
+    height:100%;
+}
+
+.wrapper{
+    display: table;
+    width: 100%;
+    margin:0 auto;
+}
+
+.wrapper{
+    position:relative;
+    min-height:100%;
+    height:auto!important;
+    overflow:hidden;
+}
+.wrapper:after {
+    content: "";
+    height: 80px;
+    display: block;
+}
+.footer{
+    height: 80px;
+    margin-top: -80px;  
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
