@@ -1,3 +1,54 @@
+.lock:hover{
+  background: url(/image/lock-up.png);
+}
+
+.lock{
+  height: 32px;
+  width: 20px;
+  background: url(/image/lock.png);
+}
+
+.form-submit{
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(72, 203, 232);
+  width: 137px;
+  height: 31px;
+  box-shadow: 0px 2px 0px rgb(59,168,192);
+  -webkit-box-shadow: 0px 2px 0px rgb(59,168,192);
+  -moz-box-shadow: 0px 2px 0px rgb(59,168,192);
+  font-family: 'fira_sansbook';
+  font-size: 19px;
+  color: rgb(255, 255, 255);
+  margin-top: 22px;
+  margin-left: 2px;
+}
+
+.reset-btn{
+  border-radius: 5px;
+  border:none;
+  background-color: rgb(132, 157, 181);
+  width: 125px;
+  height: 31px;
+  box-shadow: 0px 2px 0px rgb(104,123,143);
+  -webkit-box-shadow: 0px 2px 0px rgb(104,123,143);
+  -moz-box-shadow: 0px 2px 0px rgb(104,123,143);
+  font-family: 'fira_sansbook';
+  font-size: 19px;
+  color: rgb(255, 255, 255);
+  margin-top: 22px;
+  margin-left: 137px;
+}
+
+
+.g-recaptcha{
+  font-family: 'fira_sanslight';
+  font-size: 17px;
+  color: rgb(149, 154, 168);
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
 .support-box{
   margin-top: 68px;
   margin-left: 122px;
@@ -5,7 +56,7 @@
 
 .name-input, .email-input{
      width: 188px;
-     height: 38px;
+     height: 37px;
      margin-top: 2px;
      margin-left: 2px;
      border-radius: 3px;
@@ -80,7 +131,7 @@
     margin-bottom: 26px;
   background: rgb(239,243,247);
   border-radius: 4px;
-  padding-bottom: 243px;
+  padding-bottom: 200px;
   overflow: hidden;
 }
 
@@ -93,6 +144,7 @@
 .navigation-links{
     float: left;
     width: 250px;
+    margin-left: 3px;
 }
 
 .adrs-links{
@@ -243,13 +295,13 @@ padding: 20px;
 .lock{
     position: absolute;
     margin-left: 152px;
-    margin-top: 23px;
+    margin-top: 25px;
 }
 
 .copyright{
     position: absolute;
-  margin-left: 400px;
-margin-top: 23px;
+  margin-left: 405px;
+margin-top: 30px;
   font-size: 13px;
   font-family: "fira_sanslight";
   color: rgb(74, 84, 93);
