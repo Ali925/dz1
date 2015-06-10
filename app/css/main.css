@@ -1,3 +1,13 @@
+.lock:hover{
+  background: url(/image/lock-up.png);
+}
+
+.lock{
+  height: 32px;
+  width: 20px;
+  background: url(/image/lock.png);
+}
+
 .image-wrap{  
   width: 140px;
    height: 140px;  
@@ -51,13 +61,13 @@
 .lock{
     position: absolute;
     margin-left: 152px;
-    margin-top: 23px;
+    margin-top: 24px;
 }
 
 .copyright{
     position: absolute;
-  margin-left: 400px;
-margin-top: 23px;
+  margin-left: 404px;
+margin-top: 32px;
   font-size: 13px;
   font-family: "fira_sanslight";
   color: rgb(74, 84, 93);
@@ -81,11 +91,12 @@ margin-top: 23px;
     margin-bottom: 1em;
   padding-left: 60px;
   margin-left: 9px;
-  margin-top: 23px;
+  margin-top: -6px;
 }
 
 .edu-1{
   background: url(/image/hat.png) left center no-repeat;
+   margin-top: -5px;
    margin-bottom: 1em;
   padding-left: 70px;
   
@@ -96,12 +107,19 @@ margin-top: 23px;
     padding: 0;
 }
 
+.edulist, .worklist{
+  padding-bottom: 10px;
+}
+
 .work{
   margin-bottom: 1em;
   padding-left: 70px;
   background: url(/image/bag.png) left center no-repeat;
 }
 
+.work2{
+  margin-top: -11px;
+}
 
 .aboutme-item{
       display: list-item;
@@ -364,7 +382,7 @@ padding: 20px;
 
 .social-item{
     display:inline-block;
-    padding-right:19.6px;
+    padding-right:20px;
   width: 48px;
   height: 48px;
 }

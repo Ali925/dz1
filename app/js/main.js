@@ -33,10 +33,10 @@ $(".work-add-link").click(function(){
       $.modal("<div class='modal-box'>"
         +"<div class='modal-header'><a href='#' class='close'><img src='image/close.png' alt='close' height='25' width='25'></a><h1 class='modal-header-text'>Добавление проекта</h1>"
         +"<div class='modal-header-foot'></div></div><div class='modal-form-box'><form action='' method='post' enctype='multipart/form-data' class='modal-form'>"
-        +"<label class='work-label' for='work-name'>Название проекта</label><input id='work-name' type='text'>"
-        +"<label class='work-label' for='work-pic'>Картинка проекта<div class='work-pic-box'><img src='image/upload.png' alt='upload' class='work-png' /></div></label><input id='work-pic' type='file'>"
-        +"<label class='work-label' for='work-url'>URL проекта</label><input id='work-url' type='url'>"
-        +"<label class='work-label' for='work-about'>Описание</label><textarea id='work-about' cols='30' rows='10'></textarea>"
+        +"<label class='work-label' for='work-name'>Название проекта</label><input id='work-name' type='text' placeholder='Введите название'>"
+        +"<label class='work-label' for='work-pic'>Картинка проекта<div class='work-pic-box'>Загрузите изображение<img src='image/upload.png' alt='upload' class='work-png' /></div></label><input id='work-pic' type='file' accept='image/*'>"
+        +"<label class='work-label' for='work-url'>URL проекта</label><input id='work-url' type='url' placeholder='Добавьте ссылку'>"
+        +"<label class='work-label' for='work-about'>Описание</label><textarea id='work-about' cols='30' rows='10' placeholder='Пара слов о Вашем проекте'></textarea>"
         +"<input type='submit' value='Добавить' class='modal-sbm'></form></div></div>", {closeClass:'close', overlayCss:{background:'rgb(88,105,122)'}, opacity:80});
   
 });

@@ -1,3 +1,36 @@
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    rgb(72, 203, 232);
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    rgb(72, 203, 232);
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    rgb(72, 203, 232);
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    rgb(72, 203, 232);
+}
+
+textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color:   rgb(72, 203, 232);
+}
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:   rgb(72, 203, 232);
+}
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:   rgb(72, 203, 232);
+}
+textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    rgb(72, 203, 232);
+}
+
+.name-input, .email-input, .msg-text{
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+  color: rgb(72, 203, 232);
+  padding-left: 9px;
+}
+
 .lock:hover{
   background: url(/image/lock-up.png);
 }
@@ -37,7 +70,7 @@
   font-size: 19px;
   color: rgb(255, 255, 255);
   margin-top: 22px;
-  margin-left: 137px;
+  margin-left: 133px;
 }
 
 
@@ -46,16 +79,16 @@
   font-size: 17px;
   color: rgb(149, 154, 168);
   margin-top: 8px;
-  margin-left: 2px;
+  margin-left: 0px;
 }
 
 .support-box{
   margin-top: 68px;
-  margin-left: 122px;
+  margin-left: 124px;
 }
 
 .name-input, .email-input{
-     width: 188px;
+     width: 180px;
      height: 37px;
      margin-top: 2px;
      margin-left: 2px;
@@ -93,14 +126,15 @@
 }
 
 .msg-text{
-  width: 396px;
-  height: 177px;
+  width: 389px;
+  height: 172px;
   border-radius: 3px;
      border-width: 1px;
      margin-top: 10px;
      margin-left: 2px;
   border-color: rgb(72, 203, 232);
   border-style: solid;
+  padding-top: 8px;
 }
 
 .content-box-head-bottom{

@@ -1,8 +1,20 @@
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    rgb(72, 203, 232);
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    rgb(72, 203, 232);
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    rgb(72, 203, 232);
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    rgb(72, 203, 232);
+}
+
 .auth-box{
     margin-top: 74px;
     margin-left: 83px;
     width: 430px;
-    margin-bottom: 93px;
 }
 
 .submit-btn{
@@ -41,13 +53,18 @@
 }
 
 .login-input, .psw-input{
-  width: 422px;
+  width: 402px;
   height: 58px;
   border-width: 1px;
   border-color: rgb(72, 203, 232);
   border-style: solid;
   border-radius: 4px;
   background-color: rgb(255, 255, 255);
+  font-family: "fira_sanslight";
+  font-size: 17px;
+  color: rgb(72, 203, 232);
+  text-align: left;
+  padding-left: 20px;
 }
 
 .psw-input{
@@ -84,7 +101,7 @@ body{
     height: 484px;
     width: 591px;
     margin-top: 227px;
-    margin-bottom: 183px;
+    margin-bottom: 276px;
     margin-left: auto;
     margin-right: auto;
   background: rgb(239,243,247);
