@@ -87,6 +87,7 @@
 .main-content{
     float: right;
     width: 649px;
+    margin-bottom: 93px;
 }
 
 .navigation-links{
@@ -231,7 +232,6 @@ padding: 20px;
       position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 93px;
  } 
 
 .footer{

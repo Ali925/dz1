@@ -1,3 +1,123 @@
+.lock:hover{
+  background: url(/image/lock-up.png);
+}
+
+.lock{
+  height: 32px;
+  width: 20px;
+  background: url(/image/lock.png);
+}
+
+#work-name, #work-url{
+  border-width: 1px;
+  border-color: rgb(72, 203, 232);
+  border-style: solid;
+  border-radius: 4px;
+  background-color: rgb(251, 252, 253);
+  width: 316px;
+  height: 37px;
+  margin-bottom: 9px;
+}
+
+.modal-sbm{
+border-radius: 5px;
+border: none;
+  background-color: rgb(72, 203, 232);
+  width: 140px;
+  height: 31px;
+  box-shadow: 0px 2px 0px rgb(59,168,192);
+  -webkit-box-shadow: 0px 2px 0px rgb(59,168,192);
+  -moz-box-shadow: 0px 2px 0px rgb(59,168,192);
+  font-family: "fira_sansbook";
+  font-size: 19px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+#work-pic{
+  display: none;
+}
+
+.work-png{
+  margin-left: 268px;
+  margin-top: -1px;
+  cursor: pointer;
+}
+
+.work-pic-box{
+  border-width: 1px;
+  border-color: rgb(72, 203, 232);
+  border-style: solid;
+  border-radius: 4px;
+  background-color: rgb(251, 252, 253);
+   width: 270px;
+  height: 39px;
+  margin-bottom: 7px;
+}
+
+#work-about{
+border-width: 1px;
+  border-color: rgb(72, 203, 232);
+  border-style: solid;
+  border-radius: 4px;
+  background-color: rgb(251, 252, 253);
+  width: 315px;
+  height: 105px;
+}
+
+.work-label{
+  font-family: "fira_sansbook";
+font-size: 17px;
+color: rgb(149, 154, 168);
+}
+
+.modal-box{
+  position: static;
+  height: 493px;
+  width: 362px;
+  background: rgb(239,243,247);
+  border-radius: 5px;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+.modal-header{
+  height: 53px;
+  width: 362px;
+  background: rgb(72,203,232);
+}
+
+.close{
+  position: absolute;
+  margin-left: 325px;
+  margin-top: 10px;
+}
+
+.modal-header-foot{
+  position: absolute;
+  height: 9px;
+  width: 362px;
+  background: rgb(103,223,250);
+  margin-top: 44px;
+}
+
+.modal-form{
+  margin-left: 21px;
+  margin-top: 7px;
+}
+
+.modal-header-text{
+  font-family: 'fira_sansregular';
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 12px;
+  font-weight: lighter;
+}
+
 .work-item{
     display: inline-block;
     margin-left: 23.5px;
@@ -5,19 +125,67 @@
  
 }
 
+.work-text{
+  text-decoration: none;
+}
+
+.works-add-text{
+  position: absolute;
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+  color: rgb(59, 168, 192);
+  text-decoration: none;
+  margin-top: 75px;
+  margin-left: 40px;
+}
+
+.works-add{
+  position: absolute;
+  margin-top: 33px;
+  margin-left: 75px;
+}
+
+.work-text{
+  position: absolute;
+  color: white;
+  font-family: "fira_sansbook";
+  font-size: 0px;
+  margin-left: 5px;
+} 
+
+
+.work-link{
+  border-width: 0px;
+  border-color: rgb(239, 243, 247);
+  border-style: solid;
+  border-radius: 4px;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  margin-top: -78px;
+  margin-left: 75px;
+  
+}
+
+.work-add-wrapper{
+  position: relative;
+    height: 126px;
+  width: 180px;
+  border: 2px dashed rgb(114,191,208);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
 .work-wrapper{
+  position: relative;
     height: 126px;
   width: 180px;
   border: 2px solid rgb(114,191,208);
   border-radius: 4px;
   overflow: hidden;
+  background-color: rgb(61,142,185);
 }
 
-.work-add-wrapper{
-  border:none;
-     height: 129px;
-  width: 182px;
-}
 
 .site-address{
   font-family: 'fira_sanslight_italic';
@@ -80,11 +248,14 @@ color: rgb(74, 84, 93);
 .main-content{
     float: right;
     width: 649px;
+    margin-bottom: 96px;
 }
 
 .navigation-links{
     float: left;
     width: 250px;
+    margin-left: 3px;
+    margin-top: -2px;
 }
 
 .adrs-links{
@@ -213,7 +384,6 @@ padding: 20px;
       position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 93px;
  } 
 
 .footer{
@@ -225,13 +395,13 @@ padding: 20px;
 .lock{
     position: absolute;
     margin-left: 152px;
-    margin-top: 23px;
+    margin-top: 25px;
 }
 
 .copyright{
     position: absolute;
-  margin-left: 400px;
-margin-top: 23px;
+  margin-left: 406px;
+margin-top: 32px;
   font-size: 13px;
   font-family: "fira_sanslight";
   color: rgb(74, 84, 93);
