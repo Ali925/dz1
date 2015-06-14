@@ -169,7 +169,7 @@ margin-top: 32px;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-right: -3px;
+  margin-left: 15px;
 }
 
 .image-wrap{
@@ -197,7 +197,6 @@ margin-top: 32px;
 }
 
 .adrs-links{
-    margin-top: 0px;
     margin-left: -40px;
 }
 

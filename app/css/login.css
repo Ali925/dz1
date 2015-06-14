@@ -12,8 +12,8 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 .auth-box{
-    margin-top: 74px;
-    margin-left: 83px;
+    margin-top: 16px;
+    margin-left: 82px;
     width: 430px;
 }
 
@@ -39,17 +39,17 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
     font-family: "fira_sanslight";
     font-size: 36px;
     color: rgb(149, 154, 168);
-    position: absolute;
     margin-left: 161px;
 }
 
 .login-label{
+  position: relative;
     margin-top: -59px;
 }
 
 .psw-label{
-    margin-top: 11px;
-    margin-left: 150px; 
+  position: relative;
+    margin-left: 151px; 
 }
 
 .login-input, .psw-input{
@@ -68,7 +68,11 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 .psw-input{
-    margin-top: 69px;
+    margin-top: 2px;
+}
+
+.login-input{
+  margin-bottom: 12px;
 }
 
 body{
@@ -86,7 +90,7 @@ body{
     height: 15px;
     width: 591px;
     background: rgb(103,223,250);
-    margin-top: 14px;
+    margin-top: -19px;
 }
 
 .head-text{
@@ -100,8 +104,8 @@ body{
 .content-box{
     height: 484px;
     width: 591px;
-    margin-top: 227px;
-    margin-bottom: 276px;
+    margin-top: 7.2em;
+    margin-bottom: 7.2em;
     margin-left: auto;
     margin-right: auto;
   background: rgb(239,243,247);

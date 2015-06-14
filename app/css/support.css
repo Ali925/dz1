@@ -53,7 +53,6 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
   font-family: 'fira_sansbook';
   font-size: 19px;
   color: rgb(255, 255, 255);
-  margin-top: 22px;
   margin-left: 2px;
 }
 
@@ -69,7 +68,6 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
   font-family: 'fira_sansbook';
   font-size: 19px;
   color: rgb(255, 255, 255);
-  margin-top: 22px;
   margin-left: 133px;
 }
 
@@ -78,8 +76,8 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
   font-family: 'fira_sanslight';
   font-size: 17px;
   color: rgb(149, 154, 168);
-  margin-top: 8px;
-  margin-left: 0px;
+  margin-bottom: 25px;
+  margin-top: 5px;
 }
 
 .support-box{
@@ -165,7 +163,7 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     margin-bottom: 26px;
   background: rgb(239,243,247);
   border-radius: 4px;
-  padding-bottom: 200px;
+  padding-bottom: 80px;
   overflow: hidden;
 }
 
@@ -182,7 +180,6 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 .adrs-links{
-    margin-top: 0px;
     margin-left: -40px;
 }
 

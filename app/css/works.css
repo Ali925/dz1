@@ -70,7 +70,15 @@ border: none;
 }
 
 #work-pic{
-  display: none;
+  font: 5px monospace; 
+    opacity:0; 
+    filter: alpha(opacity=0); 
+    position: absolute;
+    z-index: 1;
+    top:80px;
+    right:5;
+    padding:0;
+    margin: 0;
 }
 
 .work-png{
@@ -178,7 +186,7 @@ color: rgb(149, 154, 168);
 
 .works-add{
   position: absolute;
-  margin-top: 33px;
+  margin-bottom: 8px;
   margin-left: 75px;
 }
 
@@ -205,12 +213,13 @@ color: rgb(149, 154, 168);
 }
 
 .work-add-wrapper{
-  position: relative;
+  position: absolute;
     height: 126px;
   width: 180px;
   border: 2px dashed rgb(114,191,208);
   border-radius: 4px;
   overflow: hidden;
+  margin-top: -19px;
 }
 
 .work-wrapper{
@@ -219,8 +228,8 @@ color: rgb(149, 154, 168);
   width: 180px;
   border: 2px solid rgb(114,191,208);
   border-radius: 4px;
-  overflow: hidden;
   background-color: rgb(61,142,185);
+  overflow: hidden;
 }
 
 
@@ -241,14 +250,17 @@ color: rgb(149, 154, 168);
 color: rgb(74, 84, 93);
   text-align: center;
   width: 170px;
+  height: 30px;
   line-height: 111%;
  margin-top: 36px;
  margin-left: 8px;
-
+  overflow: hidden;
+ text-overflow: ellipsis;
 }
 
+
 .work-box{
-  margin-top: -0.3px;
+  margin-bottom: 0.3px;
   margin-left: -0.5px;
 }
 
@@ -279,7 +291,6 @@ color: rgb(74, 84, 93);
   background: rgb(239,243,247);
   border-radius: 4px;
   overflow: hidden;
-  padding-bottom: 243px;
 }
 
 .main-content{
@@ -292,11 +303,10 @@ color: rgb(74, 84, 93);
     float: left;
     width: 250px;
     margin-left: 3px;
-    margin-top: -2px;
+    margin-bottom: 130px;
 }
 
 .adrs-links{
-    margin-top: 0px;
     margin-left: -40px;
 }
 
