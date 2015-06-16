@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" href="fonts/fira/fira.css">
 <link rel="icon" href="/image/favicon.ico" type="image/x-icon" /> 
 <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" />
 <link rel="stylesheet" type="text/css" href="css/works.css">
 <script src="bower/modernizr/modernizr.js"></script>
 </head>
@@ -127,7 +128,7 @@
               </div>
       	 		</li>
       	 		<li class="work-item add-item">
-           <a href="#" class="work-add-link"><div class="work-add-wrapper"> 
+           <a href="#" class="work-add-link" id='open-modal'><div class="work-add-wrapper"> 
       	 			<div class="work-add">
               <img src="image/add-pic.png" height="32" width="32" alt="add-new" class="works-add">
               <span class="works-add-text">Добавить проект</span>
@@ -152,8 +153,11 @@
 	</div>
 </div>   
 
-       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script> 
+       <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
+       <script src="https://raw.githubusercontent.com/hazzik/livequery/master/dist/jquery.livequery.min.js"></script>
         <script src="js/jquery.simplemodal-1.4.4.js"></script>
-        <script src="js/first.js"></script>
+        <script src="js/modal-box.js"></script>
+        <script src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>   
+        <script src="js/validate-modal.js"></script>
 </body>
 </html>

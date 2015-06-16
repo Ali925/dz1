@@ -3,29 +3,14 @@ $(document).ready(function(){
  var login = document.getElementById('login');
  var password = document.getElementById('pswd');
   
+loginOn();
+passwordOn();
 
- $('#login').ready(function(){
-      var valueL = login.value;
-    if(!valueL) 
-        {loginOn();}
-    else if (valueL) 
-        {loginOff();}
-       
- });
 
 $('#login').keyup(function(){
       var valueL = login.value;
     if(!valueL) loginOn();
     else loginOff();
-       
- });
-
- $('#pswd').ready(function(){
-      var valueP = password.value;
-    if(!valueP) 
-        {passwordOn();}
-    else if (valueP) 
-        {passwordOff();}
        
  });
 
@@ -49,9 +34,6 @@ $('#pswd').keyup(function(){
 
         text: 'введите логин'
     },
-    style: {
-        classes: 'qtip-blue qtip-shadow'
-    },
 
     show: {
         ready: true
@@ -66,11 +48,15 @@ $('#pswd').keyup(function(){
         my: 'right center',
         at: 'left center'
     },
+
     style: {
-        classes: 'qtip-blue qtip-shadow'
+        classes: 'qtip-red log-custom-tip'
     }
 
-});}
+}); 
+
+ $('#login').addClass('input-error');
+}
 
  function loginOff() {
      $('#login').qtip({
@@ -78,9 +64,6 @@ $('#pswd').keyup(function(){
       content: {
 
         text: 'введите логин'
-    },
-    style: {
-        classes: 'qtip-blue qtip-shadow'
     },
 
     show: {
@@ -95,13 +78,15 @@ $('#pswd').keyup(function(){
         my: 'right center',
         at: 'left center'
     },
+
     style: {
-        classes: 'qtip-blue qtip-shadow'
+        classes: 'qtip-red log-custom-tip'
     }
 
-});
+}); 
 
-     }
+    $('#login').removeClass('input-error');
+}
   
                
   function passwordOn() {          
@@ -120,9 +105,21 @@ $('#pswd').keyup(function(){
     hide: {
         event: false
         
-    }
+    },
 
-});}
+    position: {
+        my: 'right center',
+        at: 'left center'
+    },
+
+    style: {
+        classes: 'qtip-red psw-custom-tip'    
+      }
+
+});
+
+ $('#pswd').addClass('input-error');
+}
 
  function passwordOff() {
      $('#pswd').qtip({
@@ -138,9 +135,21 @@ $('#pswd').keyup(function(){
 
     hide: {
         event: true
-    }
+    },
+
+    position: {
+        my: 'right center',
+        at: 'left center'
+    },
+    
+    style: {
+        classes: 'qtip-red psw-custom-tip'
+         }
 
 });
+
+   $('#pswd').removeClass('input-error');
+   
 
      }       
 

@@ -24,6 +24,53 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    rgb(72, 203, 232);
 }
 
+.name-custom-tip{
+  width: 135px;
+  height: 22px;
+  border-radius:2px;
+  border-color: transparent;
+  color:white;
+  font-size: 13px; 
+  font-family: 'fira_sansbook';
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.img-custom-tip{
+  width: 107px;
+  height: 22px;
+  border-radius:2px;
+  border-color: transparent;
+  color:white;
+  font-size: 13px; 
+  font-family: 'fira_sansbook';
+  padding-top: 2px;
+  padding-left: 2px;
+}
+.url-custom-tip{
+  width: 133px;
+  height: 22px;
+  border-radius:2px;
+  border-color: transparent;
+  color:white;
+  font-size: 13px; 
+  font-family: 'fira_sansbook';
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.about-custom-tip{
+  width: 137px;
+  height: 22px;
+  border-radius:2px;
+  border-color: transparent;
+  color:white;
+  font-size: 13px; 
+  font-family: 'fira_sansbook';
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
 .lock:hover{
   background: url(/image/lock-up.png);
 }
@@ -34,14 +81,14 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
   background: url(/image/lock.png);
 }
 
-#work-name, .work-pic-box, #work-url, #work-about {
+.work-name-input, .work-pic-box, .work-url-input, .work-about-input {
   font-family: 'fira_sanslight';
   font-size: 13px;
   color: rgb(72, 203, 232);
   padding-left: 5px;
 }
 
-#work-name, #work-url{
+.work-name-input, .work-url-input {
   border-width: 1px;
   border-color: rgb(72, 203, 232);
   border-style: solid;
@@ -83,8 +130,8 @@ border: none;
 
 .work-png{
   position: absolute;
-  margin-left: 118px;
-  margin-top: -11px;
+  margin-left: 268px;
+  margin-top: -48px;
   cursor: pointer;
 }
 
@@ -98,9 +145,11 @@ border: none;
   height: 29px;
   margin-bottom: 7px;
   padding-top: 10px;
+  overflow: hidden;
+ text-overflow: ellipsis;
 }
 
-#work-about{
+.work-about-input{
 border-width: 1px;
   border-color: rgb(72, 203, 232);
   border-style: solid;
@@ -163,6 +212,11 @@ color: rgb(149, 154, 168);
   font-weight: lighter;
 }
 
+.input-error{
+  background-color: rgb(253,213,210);
+  border-color: red;
+}
+
 .work-item{
     display: inline-block;
     margin-left: 23.5px;
@@ -186,7 +240,7 @@ color: rgb(149, 154, 168);
 
 .works-add{
   position: absolute;
-  margin-bottom: 8px;
+  margin-top: 32px;
   margin-left: 75px;
 }
 

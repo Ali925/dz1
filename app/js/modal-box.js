@@ -57,12 +57,12 @@ $(document).ready(function() {
     $(".work-add-link").click(function() {
 
         $.modal("<div class='modal-box'>" 
-            + "<div class='modal-header'><a href='#' class='close'><img src='image/close.png' alt='close' height='25' width='25'></a><h1 class='modal-header-text'>Добавление проекта</h1>" 
+            + "<div class='modal-header'><a href='#' class='close' id='close-btn'><img src='image/close.png' alt='close' height='25' width='25'></a><h1 class='modal-header-text'>Добавление проекта</h1>" 
             + "<div class='modal-header-foot'></div></div><div class='modal-form-box'><form action='' method='post' enctype='multipart/form-data' class='modal-form'>" 
-            + "<label class='work-label' for='work-name'>Название проекта</label><input id='work-name' type='text' placeholder='Введите название'>" 
-            + "<label class='work-label' for='work-pic'>Картинка проекта<div class='work-pic-box'>Загрузите изображение<img src='image/upload.png' alt='upload' class='work-png' /></div></label><input id='work-pic' type='file'>" 
-            + "<label class='work-label' for='work-url'>URL проекта</label><input id='work-url' type='url' placeholder='Добавьте ссылку'>" 
-            + "<label class='work-label' for='work-about'>Описание</label><textarea id='work-about' cols='30' rows='10' placeholder='Пара слов о Вашем проекте'></textarea>" 
+            + "<label class='work-label' for='work-name'>Название проекта</label><input id='work-name' type='text' placeholder='Введите название' class='work-name-input'>" 
+            + "<label class='work-label' for='work-pic'>Картинка проекта<div class='work-pic-box' id='work-img'>Загрузите изображение</div><img src='image/upload.png' alt='upload' class='work-png' id='upload-img' /></label><input id='work-pic' type='file'>" 
+            + "<label class='work-label' for='work-url'>URL проекта</label><input id='work-url' type='url' placeholder='Добавьте ссылку' class='work-url-input'>" 
+            + "<label class='work-label' for='work-about'>Описание</label><textarea id='work-about' cols='30' rows='10' placeholder='Пара слов о Вашем проекте' class='work-about-input'></textarea>" 
             + "<input type='submit' value='Добавить' class='modal-sbm'></form></div></div>", {
             closeClass: 'close',
             overlayCss: {
@@ -81,7 +81,7 @@ $(document).ready(function() {
                     dialog.data.fadeOut('fast', function() {
                         dialog.overlay.fadeOut('fast', function() {
                             $.modal.close(); // must call this!
-                        });
+                          });
                     });
                 });
             }

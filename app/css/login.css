@@ -9,6 +9,30 @@ input::-moz-placeholder { /* Mozilla Firefox 19+ */
 }
 input:-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    rgb(72, 203, 232);
+} 
+
+.psw-custom-tip{
+  width: 137px;
+  height: 24px;
+  border-radius:2px;
+  border-color: transparent;
+  color:white;
+  font-size: 15px; 
+  font-family: 'fira_sansbook';
+  padding-top: 4px;
+  padding-left: 2px;
+}
+
+.log-custom-tip{
+  width: 127px;
+  height: 24px;
+  border-radius:2px;
+  border-color: transparent;
+  color:white;
+  font-size: 15px; 
+  font-family: 'fira_sansbook';
+  padding-top: 4px;
+  padding-left: 2px;
 }
 
 .auth-box{
@@ -73,6 +97,11 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 .login-input{
   margin-bottom: 12px;
+}
+
+.input-error{
+  background-color: rgb(253,213,210);
+  border-color: red;
 }
 
 body{

@@ -24,6 +24,57 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    rgb(72, 203, 232);
 }
 
+.name-custom-tip{
+  width: 127px;
+  height: 22px;
+  border-radius:2px;
+  border-color: transparent;
+  color:white;
+  font-size: 13px; 
+  font-family: 'fira_sansbook';
+  padding-top: 3px;
+  padding-left: 2px;
+}
+
+.email-custom-tip{
+  width: 137px;
+  height: 22px;
+  border-radius:2px;
+  border-color: transparent;
+  color:white;
+  font-size: 13px; 
+  font-family: 'fira_sansbook';
+  padding-top: 3px;
+  padding-left: 2px;
+}
+
+.about-custom-tip{
+  width: 97px;
+  height: 22px;
+  border-radius:2px;
+  border-color: transparent;
+  color:white;
+  font-size: 13px; 
+  font-family: 'fira_sansbook';
+  padding-top: 3px;
+  padding-left: 2px;
+}
+
+.recap-custom-tip{
+  width: 140px;
+  height: 22px;
+  border-radius:2px;
+  border-color: transparent;
+  color:white;
+  font-size: 13px; 
+  font-family: 'fira_sansbook';
+  padding-top: 3px;
+  padding-left: 2px;
+  margin-left: -210px;
+  margin-top: 10px;
+}
+
+
 .name-input, .email-input, .msg-text{
   font-family: 'fira_sanslight';
   font-size: 13px;
@@ -134,7 +185,10 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
   border-style: solid;
   padding-top: 8px;
 }
-
+.input-error{
+  background-color: rgb(253,213,210);
+  border-color: red;
+}
 .content-box-head-bottom{
   width: 649px;
   height: 17px;
