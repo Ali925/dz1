@@ -11,6 +11,25 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    rgb(72, 203, 232);
 } 
 
+.input-fix{
+  position: absolute;
+  margin-left: -280px;
+  margin-top: 58px;
+   width: 402px;
+  height: 58px;
+  border-width: 1px;
+  border-color: rgb(72, 203, 232);
+  border-style: solid;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  font-family: "fira_sanslight";
+  font-size: 17px;
+  color: rgb(72, 203, 232);
+  text-align: left;
+  padding-left: 20px;
+  visibility: hidden;
+}
+
 .psw-custom-tip{
   width: 137px;
   height: 24px;
@@ -93,6 +112,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 .psw-input{
     margin-top: 2px;
+    
 }
 
 .login-input{

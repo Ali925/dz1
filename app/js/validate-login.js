@@ -3,9 +3,27 @@ $(document).ready(function(){
  var login = document.getElementById('login');
  var password = document.getElementById('pswd');
 
-$('#form').on('submit', function(e){
+if ($.browser.msie) {
+ $('#fix').focus(function(){
+     
+   $('#fix').css({visibility:'hidden'});
+   $('#pswd').css({visibility:'visible'});  
+   $('#pswd').focus(); 
+ });
 
-    e.preventDefault();
+ $('#pswd').blur(function(){
+       var valueP = password.value;
+
+   if(!valueP || valueP==='Введите пароль'){
+   $('#fix').css({visibility:'visible'});
+   $('#pswd').css({visibility:'hidden'}); }
+ });
+ 
+}
+
+$('#form').submit(function(){
+
+    event.returnValue = false;
 
  var valueL = login.value;
     if(!valueL || valueL==='Введите логин') 
@@ -132,6 +150,8 @@ $('#pswd').keyup(function(){
 });
 
  $('#pswd').addClass('input-error');
+  $('#fix').addClass('input-error');
+
 }
 
  function passwordOff() {
@@ -162,7 +182,8 @@ $('#pswd').keyup(function(){
 });
 
    $('#pswd').removeClass('input-error');
-   
+      $('#fix').removeClass('input-error');
+
 
      }       
 

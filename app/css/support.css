@@ -358,7 +358,13 @@ padding: 20px;
 }
 
 .nav-link-2{
-    margin-top: 37px;
+   position: absolute;
+    font-size: 21px;
+  font-family: "fira_sansbook";
+  color:rgb(167,172,184);
+  text-decoration: none;
+    margin-left: -33px; 
+    margin-top: 34px;
 }
 
 

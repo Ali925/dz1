@@ -1,0 +1,22 @@
+.work-add-wrapper{
+	margin-top: -129px;
+}
+
+.psw-input {
+    font-family: Arial;
+  }
+
+.msg-label{
+	margin-left: 0px;
+	margin-top: -16px;
+}
+
+.input-fix{
+	margin-left: 0px;
+	margin-top: 2px;
+	visibility: visible;
+}
+
+.psw-input{
+	visibility: hidden;
+}

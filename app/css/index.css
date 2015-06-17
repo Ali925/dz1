@@ -45,6 +45,7 @@
 .skill{
   border-radius: 2px;
   background: linear-gradient(0deg,#2e8ca2 0,#2e8ca2 47%,#3ba8c0 48%,#3ba8c0 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 ); /* IE6-9 */
   padding: 0 14px;
   font-size: 14px;
   line-height: 19px;
