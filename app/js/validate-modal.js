@@ -5,13 +5,35 @@ $(document).ready(function(){
  var url = document.getElementById('work-url');
  var about = document.getElementById('work-about');
 
-$('#upload-img').load(function(){
-setTimeout(function(){
-                nameOn();
-                imageOn();
-                 urlOn();
-                aboutOn();
-            }, 1000);
+$('#form').submit(function(){
+
+event.returnValue = false;
+
+ var valueN = name.value;
+      
+    if(!valueN) 
+      {nameOn();}
+    else 
+      {nameOff();}
+
+   var valueP = image.value;
+    if(!valueP) 
+        {imageOn();}
+    else
+        {imageOff();
+         $('#work-img').text(valueP);
+        } 
+     var valueU = url.value;
+    if(!valueU) 
+      {urlOn();}
+    else 
+      {urlOff();}
+
+    var valueA = about.value;
+    if(!valueA) 
+        {aboutOn();}
+    else 
+        {aboutOff();}
 
 });
 
@@ -72,6 +94,8 @@ $('#work-about').keyup(function(){
         {aboutOff();}
        
  });
+     $('input, textarea').placeholder();      
+
 });
  
  function nameOn() {          
@@ -325,5 +349,6 @@ $('#work-about').keyup(function(){
    $('#work-about').removeClass('input-error');
    
 
-     }       
+     } 
+
   });  

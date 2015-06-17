@@ -218,11 +218,16 @@ color: rgb(149, 154, 168);
 }
 
 .work-item{
-    display: inline-block;
+    display: inline-table;
     margin-left: 23.5px;
-  margin-bottom: 110px;
+  margin-bottom: -70px;
  
 }
+
+.add-item{
+  position: relative;
+}
+
 
 .work-text{
   text-decoration: none;
@@ -240,7 +245,7 @@ color: rgb(149, 154, 168);
 
 .works-add{
   position: absolute;
-  margin-top: 32px;
+  margin-top: 28px;
   margin-left: 75px;
 }
 
@@ -266,14 +271,19 @@ color: rgb(149, 154, 168);
   
 }
 
+.work-add-link{
+  text-decoration: none;
+}
+
 .work-add-wrapper{
-  position: absolute;
+  
     height: 126px;
   width: 180px;
   border: 2px dashed rgb(114,191,208);
   border-radius: 4px;
+  
   overflow: hidden;
-  margin-top: -19px;
+  
 }
 
 .work-wrapper{
@@ -294,22 +304,25 @@ color: rgb(149, 154, 168);
   text-align: center;
   margin-top: 7px;
   margin-left: 56px;
-  position: absolute;
+  position: relative;
+}
+
+.site-link{
+  text-decoration: none;
 }
 
 .about-site{
-  position: absolute;
+   display: block;
+   position: relative;
   font-size: 15px;
   font-family: 'fira_sanslight';
 color: rgb(74, 84, 93);
   text-align: center;
   width: 170px;
-  height: 30px;
-  line-height: 111%;
- margin-top: 36px;
+  line-height: 1.4em;
+ margin-top: 6px;
  margin-left: 8px;
-  overflow: hidden;
- text-overflow: ellipsis;
+ padding-bottom: 100px;
 }
 
 

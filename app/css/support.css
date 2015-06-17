@@ -185,10 +185,7 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
   border-style: solid;
   padding-top: 8px;
 }
-.input-error{
-  background-color: rgb(253,213,210);
-  border-color: red;
-}
+
 .content-box-head-bottom{
   width: 649px;
   height: 17px;
@@ -604,4 +601,9 @@ body{
 
 .clearfix:after {
     clear: both;
+}
+
+.input-error{
+  background-color: rgb(253,213,210);
+  border-color: red;
 }

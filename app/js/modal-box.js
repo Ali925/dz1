@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     $(".work-add-wrapper").mouseenter(function() {
         $(this).children("div").children("img").css({
-            bottom: "0px"
+            bottom: "7px"
         });
         $(this).children("div").children("img").animate({
             bottom: "+=61px"
@@ -58,7 +58,7 @@ $(document).ready(function() {
 
         $.modal("<div class='modal-box'>" 
             + "<div class='modal-header'><a href='#' class='close' id='close-btn'><img src='image/close.png' alt='close' height='25' width='25'></a><h1 class='modal-header-text'>Добавление проекта</h1>" 
-            + "<div class='modal-header-foot'></div></div><div class='modal-form-box'><form action='' method='post' enctype='multipart/form-data' class='modal-form'>" 
+            + "<div class='modal-header-foot'></div></div><div class='modal-form-box'><form action='' method='post' enctype='multipart/form-data' class='modal-form' id='form'>" 
             + "<label class='work-label' for='work-name'>Название проекта</label><input id='work-name' type='text' placeholder='Введите название' class='work-name-input'>" 
             + "<label class='work-label' for='work-pic'>Картинка проекта<div class='work-pic-box' id='work-img'>Загрузите изображение</div><img src='image/upload.png' alt='upload' class='work-png' id='upload-img' /></label><input id='work-pic' type='file'>" 
             + "<label class='work-label' for='work-url'>URL проекта</label><input id='work-url' type='url' placeholder='Добавьте ссылку' class='work-url-input'>" 

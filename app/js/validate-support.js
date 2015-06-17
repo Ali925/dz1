@@ -4,9 +4,27 @@ $(document).ready(function(){
  var email = document.getElementById('email');
   var about = document.getElementById('msg');
   
-nameOn();
-emailOn();
-aboutOn();
+$('#form').on('submit', function(e){
+    e.preventDefault();
+
+      var valueN = name.value;
+    if(!valueN || valueN==='Как к Вам обращаться') 
+      {nameOn();}
+    else 
+      {nameOff();}
+
+     var valueE = email.value;
+    if(!valueE || valueE==='Куда мне писать') 
+        {emailOn();}
+    else 
+        {emailOff();}
+
+        var valueA = about.value;
+    if(!valueA || valueA==='Кратко в чем суть') 
+      {aboutOn();}
+    else 
+      {aboutOff();}
+})
 
 $('.reset-btn').click(function(){
 

@@ -2,10 +2,23 @@ $(document).ready(function(){
 
  var login = document.getElementById('login');
  var password = document.getElementById('pswd');
-  
-loginOn();
-passwordOn();
 
+$('#form').on('submit', function(e){
+
+    e.preventDefault();
+
+ var valueL = login.value;
+    if(!valueL || valueL==='Введите логин') 
+      loginOn();
+    else 
+      loginOff();
+
+     var valueP = password.value;
+    if(!valueP || valueP==='Введите пароль') 
+        {passwordOn();}
+    else 
+        {passwordOff();}
+});
 
 $('#login').keyup(function(){
       var valueL = login.value;
