@@ -47,9 +47,7 @@ $('#close-btn').click(function(){
 $('#work-name').keyup(function(){
       var valueN = name.value;
       
-    if(!valueN) 
-      {nameOn();}
-    else 
+    if(valueN) 
       {nameOff();}
        
  });
@@ -65,9 +63,7 @@ $('#work-pic').click(function(){
 
 $('#work-pic').change(function(){
   var valueP = image.value;
-    if(!valueP) 
-        {imageOn();}
-    else
+    if(valueP) 
         {imageOff();
          $('#work-img').text(valueP);
         } 
@@ -77,21 +73,17 @@ $('#work-pic').change(function(){
 
 $('#work-url').keyup(function(){
       var valueU = url.value;
-    if(!valueU) 
-      {urlOn();}
-    else 
-      {urlOff();}
-       
+    if(valueU) 
+      urlOff();
+           
  });
 
 
 
 $('#work-about').keyup(function(){
       var valueA = about.value;
-    if(!valueA) 
-        {aboutOn();}
-    else 
-        {aboutOff();}
+    if(valueA) 
+        aboutOff();
        
  });
      $('input, textarea').placeholder();      

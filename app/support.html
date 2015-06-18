@@ -97,14 +97,14 @@
            </div> 
 
          <div class="support-box">
-           <form action="" class="support-form" id='form'>
+           <form action="mail.php" method="post" class="support-form" id='form' novalidate>
              <label for="name" class="name-label">Имя</label>
-             <input type="text" class="name-input" id="name" placeholder="Как к Вам обращаться">
+             <input type="text" class="name-input" id="name" placeholder="Как к Вам обращаться" name='name'>
              <label for="email" class="email-label">Email</label>
-             <input type="email" class="email-input" id="email" placeholder="Куда мне писать">
+             <input type="email" class="email-input" id="email" placeholder="Куда мне писать" name='address'>
              <label for="msg" class="msg-label">Сообщение</label>
-             <textarea id="msg" cols="30" rows="10" class="msg-text" placeholder="Кратко в чем суть"></textarea>
-             <div class="g-recaptcha" id="recaptcha" data-sitekey="6LdzJQgTAAAAAKrfvylxt8q1vM-xVdgH7eEn09Jk">Введите код, указанный на картинке</div>
+             <textarea id="msg" cols="30" rows="10" class="msg-text" placeholder="Кратко в чем суть" name='message'></textarea>
+             <div class="g-recaptcha" id="recaptcha" name="g-recaptcha-response" data-sitekey="6LdzJQgTAAAAAKrfvylxt8q1vM-xVdgH7eEn09Jk">Введите код, указанный на картинке</div>
              <input type="submit" value="Отправить" class="form-submit">
              <button type="reset" class="reset-btn">Очистить</button>
            </form>
@@ -128,7 +128,7 @@
         <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
    <script src="http://jamesallardice.github.io/Placeholders.js/assets/js/placeholders.min.js"></script>
         <script src='https://www.google.com/recaptcha/api.js'></script>
-         <script src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>  
+         <script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/jquery.qtip.min.js"></script>  
         <script src="js/validate-support.js"></script>
 </body>
 </html>

@@ -40,17 +40,15 @@ $('#form').submit(function(){
 
 $('#login').keyup(function(){
       var valueL = login.value;
-    if(!valueL) loginOn();
-    else loginOff();
+    if(valueL) loginOff();
+  
        
  });
 
 
 $('#pswd').keyup(function(){
       var valueP = password.value;
-    if(!valueP) 
-        {passwordOn();}
-    else if (valueP) 
+    if(valueP) 
         {passwordOff();}
        
  });

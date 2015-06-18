@@ -7,23 +7,35 @@ $(document).ready(function(){
 $('#form').on('submit', function(e){
     e.preventDefault();
 
+    var key=0;
+
       var valueN = name.value;
     if(!valueN || valueN==='Как к Вам обращаться') 
-      {nameOn();}
+      {nameOn(); key=1;}
     else 
       {nameOff();}
 
      var valueE = email.value;
     if(!valueE || valueE==='Куда мне писать') 
-        {emailOn();}
+        {emailOn(); key=1;}
     else 
         {emailOff();}
 
         var valueA = about.value;
     if(!valueA || valueA==='Кратко в чем суть') 
-      {aboutOn();}
+      {aboutOn(); key=1;}
     else 
       {aboutOff();}
+
+    if(key===0)
+    { 
+      postFormData($(this), function(data){
+          
+          console.log(data.status);
+      
+        
+      });
+    }
 })
 
 $('.reset-btn').click(function(){
@@ -31,35 +43,53 @@ $('.reset-btn').click(function(){
     nameOff();
     emailOff();
     aboutOff();
-    recapOff();
 })
 
 $('#name').keyup(function(){
       var valueN = name.value;
-    if(!valueN) 
-      {nameOn();}
-    else 
-      {nameOff();}
-       
+
+    if(valueN) 
+      nameOff();
+    
  });
 
 $('#email').keyup(function(){
       var valueE = email.value;
-    if(!valueE) 
-        {emailOn();}
-    else 
-        {emailOff();}
+
+    if(valueE) 
+        emailOff();
        
  });
 
 $('#msg').keyup(function(){
       var valueA = about.value;
-    if(!valueA) 
-      {aboutOn();}
-    else 
-      {aboutOff();}
+
+    if(valueA) 
+      aboutOff();
        
  });
+
+});
+
+function postFormData(form, successCallback) {
+  var
+    host        = form.attr('action'),
+    reqFields   = form.find('[name]'),
+    dataObject  = {};
+
+  
+  reqFields.each(function(){
+    var
+      $this = $(this),
+      value = $this.val(),
+      name  = $this.attr('name');
+
+    dataObject[name] = value;
+  });
+
+  $.post(host, dataObject, successCallback);
+}
+
 
 
  function nameOn() {          
@@ -251,6 +281,3 @@ $('#msg').keyup(function(){
    
 
      }  
-
-
-});
