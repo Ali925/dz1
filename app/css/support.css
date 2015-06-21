@@ -24,6 +24,45 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    rgb(72, 203, 232);
 }
 
+
+.error-box{
+  width: 500px;
+  background-color: rgb(242,204,205);
+  border: 1px solid red;
+  border-radius: 4px;
+  font-family: 'fira_sansbook';
+  font-size: 18px;
+  color: rgb(249, 126, 118);
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+
+}
+
+.error-close{
+  position: absolute; 
+  width: 10px;
+  height: 10px;
+  background-image: url(/image/close2.png);
+  margin-left: 487px;
+  margin-top: -10px;
+  cursor:pointer;
+}
+
+.accept-box{
+  background-color: rgb(184,225,206);
+  border: 1px solid green;
+  color: rgb(73, 187, 123);
+}
+
+.accept-close{
+  background-image: url(/image/accept.png);
+}
+
+
 .name-custom-tip{
   width: 127px;
   height: 22px;

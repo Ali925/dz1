@@ -5,12 +5,14 @@ $name = $_POST['name'];
 $adrs = $_POST['address'];
 $msg = $_POST['message'];
 $captcha = $_POST['g-recaptcha-response'];
-$ip = $_SERVER['REMOTE ADDR'];
-$key = '6LdzJQgTAAAAABZAJO01P2yfikNy982VMvyhyhjT';
 
 require_once "libs/valitron/src/Valitron/Validator.php";
+require_once "libs/valitron/lang/ru.php";
 
 use Valitron\Validator as Validator;
+
+Validator::langDir(__DIR__.'/libs/valitron/lang/');	
+Validator::lang('ru');
 
 $user = array(
      'name' => $name,
@@ -31,9 +33,9 @@ $rules = array(
 	);
 
 $labels = array(
-     'name' => 'Name',
-     'mail' => 'Email',
-     'text' => 'Message'
+     'name' => 'Имя',
+     'mail' => 'Текст в поле Email',
+     'text' => 'Сообщение'
 	);
 
 $v->rules($rules);
@@ -47,8 +49,8 @@ else {
 }
 
 if($resultV===true){
-	$resultC = check_captcha($key, $captcha, $ip);
-	if($resultC==false){
+	$resultC = check_captcha($captcha);
+	if(!$resultC){
      $resultC="captcha";
 	}
 
@@ -64,19 +66,27 @@ $resultM = send_message_to_email($name, $adrs, $msg);
 
 }
 
-function check_captcha($c_key, $c_captcha, $c_ip){
-   
-   $url_to_send = "https://www.google.com/recaptcha/api/siteverify?secret=".$c_key."&response=".$c_captcha."&remoteip=".$c_ip;
-   $data_request = file_get_contents($url_to_send);
-   $data = json_decode($data_request, true);
 
-   if(isset($data['success']) && $data['success'] == 1){
-   	return true;
-   }
-   else {
-   	return false;
-   }
-}      
+if($resultV!==true) {
+	$result=$resultV; }
+elseif($resultC!==true) {
+	$result=$resultC; }
+else {
+	$result=$resultM;
+}
+	
+echo json_encode(array(
+	'status' => $result,
+));
+
+function check_captcha($catpcha){
+
+    if($catpcha=='') {
+        return false;
+    } else {
+        return true;
+    }
+} 
 
 function send_message_to_email($senderName, $addressTo, $messageTo) {
 
@@ -94,19 +104,6 @@ function send_message_to_email($senderName, $addressTo, $messageTo) {
 
 	return $mail->Send();
 }
-
-
-if($resultV!==true) {
-	$result=$resultV; }
-elseif($resultC!==true) {
-	$result=$resultC; }
-else {
-	$result=$resultM;
-}
-	
-echo json_encode(array(
-	'status' => $result,
-));
 
 
 ?>

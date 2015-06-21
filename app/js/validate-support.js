@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+errorName = '';
+
  var name = document.getElementById('name');
  var email = document.getElementById('email');
   var about = document.getElementById('msg');
@@ -30,13 +32,36 @@ $('#form').on('submit', function(e){
     if(key===0)
     { 
       postFormData($(this), function(data){
+           if(Popups.key===false){
+           Popups.init();
+           Popups.key=true;
+           }
+
+          if(data.status!==true && data.status!='captcha'){
+          var dataArr = $.map(data.status, function(el){
+            return el;
+          });
+          Popups.popupClean();
+          $.each(dataArr, function(index, value){
+             var textValue=value;
+             Popups.popupOpen(textValue);
+          });
+         }
+
+         else if(data.status=='captcha'){
+          Popups.popupClean();
+           Popups.popupOpen('Вы не подтвердили капчу');
+         }
+         
+
+         else if (data.status===true){
+         Popups.popupClean();
+           Popups.popupAccept('Ваше письмо отправлено удачно');
+         } 
           
-          console.log(data.status);
-      
-        
       });
     }
-})
+});
 
 $('.reset-btn').click(function(){
 
@@ -86,7 +111,7 @@ function postFormData(form, successCallback) {
 
     dataObject[name] = value;
   });
-
+   
   $.post(host, dataObject, successCallback);
 }
 
